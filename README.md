@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Live](https://your-live-site-url.com)
+- Solution URL: [Solution](https://github.com/abhishek-baliyan-dev/Frontend-Mentor-Challenge-Order-summary-component)
+- Live Site URL: [Live](https://abhishek-baliyan-dev.github.io/Frontend-Mentor-Challenge-Order-summary-component/)
 
 ### Built with
 
