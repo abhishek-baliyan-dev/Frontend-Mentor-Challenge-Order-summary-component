@@ -1,0 +1,129 @@
+:root {
+    --bg-color: hsl(225, 100%, 94%);
+    --btn-bg-color: hsl(245, 75%, 52%);
+    --price-bg-color: hsl(225, 100%, 98%);
+    --p-color: hsl(224, 23%, 55%);
+    --h1-color: hsl(223, 47%, 23%);
+}
+
+/* Begin Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+img {
+    display: block;
+}
+/* End Reset */
+
+body {
+    min-height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("./images/pattern-background-mobile.svg") no-repeat var(--bg-color);
+}
+  
+
+main {
+    background-color: white;
+    width: 350px;
+    min-width: 350px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 0px 17px 35px -16px var(--bg-color);
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin: 2rem 0 1.5rem 0;
+}
+
+.summary {
+    line-height: 1.5;
+    color: var(--p-color);
+    padding: 0 3.3rem;
+    margin-bottom: 1rem;
+}
+
+.plan-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--price-bg-color);
+    margin: 0 1.5rem 1rem;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;    
+}
+
+.icon-text {
+    display: flex;
+}
+
+.plan-desc {
+    margin-left: 1.5rem;
+}
+
+.plan-desc h2 {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.plan-desc p {
+    color: var(--p-color);
+}
+
+.plan-container a {
+    color: var(--btn-bg-color);
+}
+
+button {
+    width: 80%;
+    margin: 1rem;
+    padding: 0.8rem;
+    background-color: var(--btn-bg-color);
+    color: var(--price-bg-color);
+    font-weight: 900;
+    border: none;
+    border-radius: 0.6rem;
+    box-shadow: 0px 4px 10px 0px var(--btn-bg-color);
+}
+
+.cancel-order {
+    margin: 0.5rem auto 2rem;
+    color: var(--p-color);
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+.cancel-order:hover {
+    cursor: pointer;
+    color: var(--h1-color);
+}
+
+button:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+.plan-container a:hover {
+    opacity: .7;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 400px) {
+    body {
+        background: url("./images/pattern-background-desktop.svg") no-repeat var(--bg-color);
+    }
+}
